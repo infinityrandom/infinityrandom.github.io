@@ -6,6 +6,7 @@ body {
     font-family: sans-serif;
     font-weight: bold;
     margin: 0;
+    animation: a1 2s;
 }
 
 a {
@@ -13,11 +14,45 @@ a {
     color: darkred;
 }
 
+@keyframes a1 {
+    0% {
+        opacity: 0;
+        transform: translateY(-150%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes a2 {
+    50% {
+        opacity: 0;
+        transform: translateY(150%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes a3 {
+    75% {
+        opacity: 0;
+        transform: translateY(150%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
 /* HEADER */
 header {
     color: white;
     padding: 1em 2em;
+    animation: a2 3s;
 }
 
 header a {
@@ -43,6 +78,7 @@ nav ul {
     justify-content: flex-end;
     margin: 0;
     padding-top: .6em;
+    animation: fadeinUp 3s;
 }
 
 nav li {
@@ -61,6 +97,7 @@ footer {
     border-top: 1px solid #ddd;
     max-width: 1000px;
     margin: 0 auto;
+    animation: a3 4s;
 }
 footer nav ul {
     justify-content: center;
@@ -86,6 +123,7 @@ section {
     text-align: center;
     min-height: 50vh;
     color: white;
+    animation: fadeinUp 4s;
 }
 
 .hero h2 {
@@ -184,8 +222,8 @@ section {
         display: block;
         max-height: 500px;
         transition: .8s all ease-out;
-        padding: 3em 3em 6em 30em;
-        background: rebeccapurple;
+        padding: 3em 3em 10em 55em;
+        background: silver;
         clip-path: polygon(0 0, 100% 0, 100% 100%);
         position: absolute;
         top: 0;
@@ -200,6 +238,7 @@ section {
     
     .toggle-nav .site-nav ul li a {
         transition: .2s all ease-out;
+        color: black;
     }
     
     .page-home .toggle-nav .site-nav ul li a:hover {
