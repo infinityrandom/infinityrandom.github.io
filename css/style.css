@@ -8,9 +8,7 @@ body {
     margin: 0;
 }
 
-a {
-    text-decoration: underline;
-}
+
 
 
 /* HEADER */
@@ -61,15 +59,13 @@ nav a {
 footer {
     border-top: 1px solid #ddd;
     max-width: 1000px;
+    min-height: 20vh;
     margin: 0 auto;
 }
 footer nav ul {
     justify-content: center;
 }
 
-footer a {
-    color: black;
-}
 
 
 /* MAIN */
@@ -104,6 +100,26 @@ section {
     margin: 1em auto;
 }
 
+/* LINKS */
+.page-home header a {
+    color: silver;
+}
+
+footer a {
+    color: black;
+}
+
+a {
+    text-decoration: underline;
+}
+
+/* SUB PAGES */
+.page-sub .hero {
+    background: #888;
+    min-height: 30vh;
+}
+
+/* HOME PAGE */
 .page-home .hero {
     background-image: url('../images/stars.jpg');
     background-position: center;
@@ -119,19 +135,22 @@ section {
     padding-top: .6em;
 }
 
-.page-home .about a {
+.about a {
     color: royalblue;
 }
 
-/* LINKS */
-.page-home a {
-    color: silver;
+.about {
+    max-width: 600px;
+    margin: 0 auto;
 }
 
-/* SUB PAGES */
-.page-sub .hero {
-    background: #888;
-    min-height: 30vh;
+.about h3 {
+    padding-top: 10px;
 }
 
+
+/* SECTIONS */
+section {
+    padding: 3em 1em;
+}
 
