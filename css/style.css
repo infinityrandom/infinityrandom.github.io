@@ -259,9 +259,9 @@ section {
     transition: .2s all ease-out;
 }
 
-.page-about .navicon:after { color: gray; }
-.page-blog .navicon:after { color: rebeccapurple; }
-.page-books .navicon:after { color: silver; }
+.page-about .navicon:after { color: silver; }
+.page-home .navicon:after { color: silver; }
+
 
 .expanded .navicon:after {
     content: "\2715";
@@ -285,11 +285,11 @@ section {
 
     .toggle-nav .site-nav.expanded ul {
         display: block;
-        max-height: 500px;
+        min-height: 1000px;
+        min-width: 1000px;
         transition: .8s all ease-out;
         padding: 3em 3em 6em 30em;
-        background: rebeccapurple;
-        clip-path: polygon(0 0, 100% 0, 100% 100%);
+        background: black;
         position: absolute;
         top: 0;
         right: 0;
