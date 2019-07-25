@@ -131,21 +131,26 @@ a {
     color: rgb(207, 207, 207);
 }
 
-.page-home h2 {
+.page-home .hero h2 {
     padding-top: .6em;
 }
 
-.about a {
+.page-home .about a {
     color: royalblue;
 }
 
-.about {
+.page-home .about {
     max-width: 600px;
     margin: 0 auto;
 }
 
-.about h3 {
+.page-home .about h3 {
     padding-top: 10px;
+}
+
+/* ABOUT PAGE */
+.page-about .hero h2 {
+    padding-top: .6em;
 }
 
 
