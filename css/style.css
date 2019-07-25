@@ -127,24 +127,20 @@ a {
     background-color: rgb(31, 59, 143);
 }
 
-.page-home h2 {
-    color: rgb(207, 207, 207);
-}
-
 .page-home .hero h2 {
     padding-top: .6em;
 }
 
-.page-home .about a {
+.page-home .home-archives a {
     color: royalblue;
 }
 
-.page-home .about {
+.page-home .home-archives {
     max-width: 600px;
     margin: 0 auto;
 }
 
-.page-home .about h3 {
+.page-home .home-archives h3 {
     padding-top: 10px;
 }
 
@@ -153,7 +149,7 @@ a {
     margin: 0 auto;
 }
 
-.page-home .about h3 {
+.page-home .home-archives h3 {
     color: skyblue;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
@@ -171,18 +167,147 @@ a {
 .page-home a {
         color: silver;
         text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    }
 }
-
 
 /* ABOUT PAGE */
 .page-about .hero h2 {
     padding-top: .6em;
 }
 
+.page-about .hero {
+    background-image: url('../images/sparks.jpg');
+    background-position: center;
+    background-size: cover;
+    background-color: black
+}
 
+.page-about .hero h2 {
+    color: silver;
+    text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
+}
+
+.page-about .about-archives h3 {
+    color: skyblue;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.page-about .about-archives {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.page-about a {
+    color: silver;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+i {
+    border: solid silver;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
 /* SECTIONS */
 section {
     padding: 3em 1em;
 }
 
+
+/* MENU BUTTON */
+
+.menu-button {
+    position: absolute;
+    z-index: 10;
+    top: 1.5em;
+    right: 4%;
+    display: flex;
+    color: rgba(red, green, blue, alpha)
+}
+
+.menu-button:hover {
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .menu-button {
+        top: -9999px;
+        left: -9999px;
+    }
+}
+
+/* NAVICON */
+
+.navicon {
+    color: rgba(207, 124, 255,0);
+    cursor: default;
+    top: 1.2em;
+    position: absolute;
+}
+
+.navicon:after {
+    cursor: pointer;
+    content: "\2630";
+    font-size: 1.5em;
+    color: rgb(191, 134, 255);
+    display: block;
+    margin-left: .5em;
+    transition: .2s all ease-out;
+}
+
+.page-about .navicon:after { color: gray; }
+.page-blog .navicon:after { color: rebeccapurple; }
+.page-books .navicon:after { color: silver; }
+
+.expanded .navicon:after {
+    content: "\2715";
+    transform: rotate(90deg);
+}
+
+/* TOGGLE NAV */
+
+@media (max-width: 767px) {
+
+    .toggle-nav {
+        text-align: left;
+    }
+
+    .toggle-nav .site-nav ul {
+        display: none;
+        max-height: 0;
+        overflow: hidden;
+        transition: .4s all ease-out;
+    }
+
+    .toggle-nav .site-nav.expanded ul {
+        display: block;
+        max-height: 500px;
+        transition: .8s all ease-out;
+        padding: 3em 3em 6em 30em;
+        background: rebeccapurple;
+        clip-path: polygon(0 0, 100% 0, 100% 100%);
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 5;
+    }
+    
+    .toggle-nav .site-nav ul li {
+        display: block;
+        text-align: center;
+    }
+    
+    .toggle-nav .site-nav ul li a {
+        transition: .2s all ease-out;
+    }
+
+    .page-home .toggle-nav .site-nav ul li a:hover {
+        background: navy;
+        color: seashell;
+    }
+
+}
