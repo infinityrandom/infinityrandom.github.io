@@ -253,14 +253,18 @@ section {
     cursor: pointer;
     content: "\2630";
     font-size: 1.5em;
-    color: rgb(191, 134, 255);
     display: block;
     margin-left: .5em;
     transition: .2s all ease-out;
 }
 
-.page-about .navicon:after { color: silver; }
-.page-home .navicon:after { color: silver; }
+.page-about .navicon:after { 
+    color: silver;
+}
+
+.page-home .navicon:after { 
+    color: silver;
+}
 
 
 .expanded .navicon:after {
@@ -286,7 +290,7 @@ section {
     .toggle-nav .site-nav.expanded ul {
         display: block;
         min-height: 1000px;
-        min-width: 1000px;
+        min-width: 900px;
         transition: .8s all ease-out;
         padding: 3em 3em 6em 30em;
         background: black;
