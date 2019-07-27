@@ -169,6 +169,16 @@ a {
         text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
+.about-link {
+    position: relative;
+    right: 100px;
+}
+
+.home-link {
+    position: relative;
+    left: -100px;
+}
+
 /* ABOUT PAGE */
 .page-about .hero h2 {
     padding-top: .6em;
@@ -206,9 +216,9 @@ i {
     border-width: 0 3px 3px 0;
     display: inline-block;
     padding: 2px;
-    position: relative;
-    left: 20px;
-    bottom: 2px
+    position: absolute;
+    left: 70px;
+    bottom: 20px
 }
 
 .page-about i {
@@ -327,4 +337,55 @@ section {
         color: seashell;
     }
 
+    .toggle-nav .site-nav .home-link {
+        position: absolute;
+        right: -500px;
+    }
+
+    .toggle-nav .site-nav .about-link {
+        position: absolute;
+        left: 130px;
+        top: 50px;
+    }
+
+}
+
+/* DROPDOWN */
+.dropbtn {
+    cursor: pointer;
+    position: absolute;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown ul {
+    padding: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100px;
+    left: 130px;
+    background-color: navy;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: silver;
+    padding: 12px 16px;
+    text-decoration: underline;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(61, 61, 255);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
