@@ -206,11 +206,18 @@ i {
     border-width: 0 3px 3px 0;
     display: inline-block;
     padding: 2px;
-    position: absolute;
-    left: 70px;
-    bottom: 20px
 }
 
+.page-home i {
+    position: relative;
+    bottom: 2px;
+    left: 6px;
+}
+
+.page-about i {
+    position: relative;
+    left: 6px;
+}
 .down {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
@@ -236,7 +243,7 @@ section {
     cursor: pointer;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 2000px) {
     .menu-button {
         top: -9999px;
         left: -9999px;
@@ -277,7 +284,7 @@ section {
 
 /* TOGGLE NAV */
 
-@media (max-width: 767px) {
+@media (max-width: 1999px) {
 
     .toggle-nav {
         text-align: left;
@@ -326,5 +333,32 @@ section {
         position: absolute;
         right: 470px;
     }
+
+    .page-about .toggle-nav .site-nav .home-link {
+        position: absolute;
+        right: 545px;
+    }
+
+    .page-about .toggle-nav .site-nav .about-link {
+        position: absolute;
+        right: 425px;
+    }
+
+    .home-link a {
+        font-size: 17px;
+    }
+
+    .about-link a {
+        font-size: 17px;
+    }
+
+    .page-about .home-link a {
+        font-size: 14px;
+    }
+
+    .page-about .about-link a {
+        font-size: 14px;
+    }
+
 
 }
