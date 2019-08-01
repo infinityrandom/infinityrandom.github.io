@@ -59,8 +59,9 @@ nav a {
 footer {
     border-top: 1px solid #ddd;
     max-width: 1000px;
-    min-height: 20vh;
+    min-height: 40vh;
     margin: 0 auto;
+    background-color: black;
 }
 
 footer nav ul {
@@ -382,3 +383,20 @@ section {
     margin: 0 auto;
 }
 
+.page-home .numbers {
+    max-width: 665px;
+    margin: 0 auto;
+}
+
+.page-home .forms-link {
+    position: absolute;
+    top: 250px;
+    right: 250px;
+}
+
+.page-home .wir-link {
+    position: absolute;
+    top: 143px;
+    right: 75px;
+    font-size: 14px;
+}
