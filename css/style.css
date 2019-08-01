@@ -132,7 +132,7 @@ a {
 }
 
 .page-home .home-archives a {
-    color: royalblue;
+    color: silver;
 }
 
 .page-home .home-archives {
@@ -375,5 +375,10 @@ section {
     top: 90px;
     right: 58px;
     font-size: 13px;
+}
+
+.page-home .lessons-th {
+    max-width: 665px;
+    margin: 0 auto;
 }
 
