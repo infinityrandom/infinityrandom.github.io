@@ -58,7 +58,7 @@ nav a {
 /* FOOTER */
 footer {
     border-top: 1px solid #ddd;
-    max-width: 1000px;
+    min-width: 650px;
     min-height: 40vh;
     margin: 0 auto;
     background-color: black;
@@ -346,11 +346,11 @@ section {
     }
 
     .home-link a {
-        font-size: 17px;
+        font-size: 14px;
     }
 
     .about-link a {
-        font-size: 17px;
+        font-size: 14px;
     }
 
     .page-about .home-link a {
@@ -368,7 +368,7 @@ section {
     position: absolute;
     top: 100px;
     right: 65px;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .page-about .whir-link a {
@@ -398,5 +398,12 @@ section {
     position: absolute;
     top: 143px;
     right: 75px;
-    font-size: 14px;
+    font-size: 13px;
+}
+
+.page-about .wir-link {
+    position: absolute;
+    top: 130px;
+    right: 67px;
+    font-size: 13px;
 }
