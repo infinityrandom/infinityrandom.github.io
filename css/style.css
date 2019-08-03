@@ -58,7 +58,7 @@ nav a {
 /* FOOTER */
 footer {
     border-top: 1px solid #ddd;
-    min-width: 650px;
+    min-width: 300px;
     min-height: 40vh;
     margin: 0 auto;
     background-color: black;
@@ -120,6 +120,13 @@ a {
     min-height: 30vh;
 }
 
+/* CONTACT PAGE */
+.page-contact {
+    background-image: url('../images/stars.jpg');
+    background-position: center;
+    background-size: cover;
+    background-color: rgb(31, 59, 143);
+}
 /* HOME PAGE */
 .page-home .hero {
     background-image: url('../images/stars.jpg');
@@ -277,6 +284,9 @@ section {
     color: silver;
 }
 
+.page-contact .navicon:after {
+    color: silver;
+}
 
 .expanded .navicon:after {
     content: "\2715";
